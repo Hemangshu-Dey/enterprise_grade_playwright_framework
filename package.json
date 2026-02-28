@@ -1,0 +1,25 @@
+{
+	"name": "enterprise_grade_playwright_framework",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "husky"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.4",
+		"@playwright/test": "^1.58.2",
+		"@types/node": "^25.3.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7"
+	},
+	"lint-staged": {
+		"*.{js,ts,json}": [
+			"biome format --write --no-errors-on-unmatched",
+			"biome lint --no-errors-on-unmatched"
+		]
+	}
+}
