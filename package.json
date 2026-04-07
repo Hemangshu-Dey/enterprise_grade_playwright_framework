@@ -21,5 +21,8 @@
 			"biome format --write --no-errors-on-unmatched",
 			"biome lint --no-errors-on-unmatched"
 		]
+	},
+	"dependencies": {
+		"dotenv": "^17.3.1"
 	}
 }
